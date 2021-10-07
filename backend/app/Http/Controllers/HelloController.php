@@ -9,7 +9,7 @@ class HelloController extends Controller
 {
   public function index(Request $request) {
     $data = [
-      'msg' => 'これはコントローラから渡されたメッセージです。',
+      'msg' => 'これはコントローラから渡されたメッセージを表示するテストです。',
       'id' => $request->id,
     ];
     return view('hello.index', $data);
